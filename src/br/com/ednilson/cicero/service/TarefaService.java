@@ -19,6 +19,10 @@ public class TarefaService {
 		return list;
 	}
 	
+	public void adiciona(Tarefa obj) {
+		dao.adiciona(obj);
+	}
+	
 	
 
 }
