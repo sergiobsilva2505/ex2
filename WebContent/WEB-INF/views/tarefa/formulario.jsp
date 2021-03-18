@@ -6,6 +6,8 @@
 <title>Form</title>
 </head>
 <body>
+	<c:import url="header.jsp" />
+	
 	<h3>Adicionar tarefas</h3>
 	<form action="adicionaTarefa" method="post">
 

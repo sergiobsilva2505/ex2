@@ -11,6 +11,7 @@
 <title>Tarefas</title>
 </head>
 <body>
+	<c:import url="header.jsp" />
 	<table>
 		<tr>
 			<th>Descrição</th>

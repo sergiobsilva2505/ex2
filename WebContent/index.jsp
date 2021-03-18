@@ -12,7 +12,7 @@
 
 		
 
-		window.location.href = "novaTarefa";
+		window.location.href = "listaTarefa";
 	}
 </script>
 
