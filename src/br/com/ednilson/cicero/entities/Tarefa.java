@@ -1,6 +1,6 @@
 package br.com.ednilson.cicero.entities;
 
-import java.util.Calendar;
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,7 +14,7 @@ public class Tarefa {
 	private Long id;
 	private String descricao;
 	private boolean finalizado;
-	private Calendar dataFinalizacao;
+	private Date dataFinalizacao;
 
 	public Tarefa() {
 		
@@ -44,12 +44,20 @@ public class Tarefa {
 		this.finalizado = finalizado;
 	}
 
-	public Calendar getDataFinalizacao() {
+	public Date getDataFinalizacao() {
 		return dataFinalizacao;
 	}
 
-	public void setDataFinalizacao(Calendar dataFinalizacao) {
+	public void setDataFinalizacao(Date dataFinalizacao) {
 		this.dataFinalizacao = dataFinalizacao;
 	}
+
+	@Override
+	public String toString() {
+		return "Tarefa [id=" + id + ", descricao=" + descricao + ", finalizado=" + finalizado + ", dataFinalizacao="
+				+ dataFinalizacao + "]";
+	}
+	
+	
 
 }

@@ -12,7 +12,7 @@
 
 		
 
-		window.location.href = "boasVindas?nome=" + "Bem vindo";
+		window.location.href = "novaTarefa";
 	}
 </script>
 
