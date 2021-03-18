@@ -11,17 +11,20 @@
 <title>Tarefas</title>
 </head>
 <body>
-	<ul>
+	<table>
+		<tr>
+			<th>Descrição</th>
+			<th>Finalizado</th>
+			<th>Data Finalizacao</th>
+		</tr>
 		<c:forEach items="${tarefas}" var="listvalue">
-			<li>${ listvalue.descricao} - ${ listvalue.finalizado } - 
-			<fmt:formatDate value="${ listvalue.dataFinalizacao }" pattern="dd/MM/yyyy" /> </li>
-
+			<tr>
+				<td>${ listvalue.descricao}</td>
+				<td>${ listvalue.finalizado }</td>
+				<td><fmt:formatDate value="${ listvalue.dataFinalizacao }"
+						pattern="dd/MM/yyyy" /></td>
+			</tr>
 		</c:forEach>
-	</ul>
-
-
-
-
-
+	</table>
 </body>
 </html>
