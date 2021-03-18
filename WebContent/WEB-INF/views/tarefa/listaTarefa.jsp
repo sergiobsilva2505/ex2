@@ -3,6 +3,7 @@
 
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,9 +12,9 @@
 </head>
 <body>
 	<ul>
-		<c:forEach items="${tarefas} }">
-			<li>${ tarefa.descricao} - ${ tarefa.finaliado } - 
-			<fmt:formatDate value="${ tarefa.dataFinalizacao }" pattern="dd/MM/yyyy" /> </li>
+		<c:forEach items="${tarefas}" var="listvalue">
+			<li>${ listvalue.descricao} - ${ listvalue.finalizado } - 
+			<fmt:formatDate value="${ listvalue.dataFinalizacao }" pattern="dd/MM/yyyy" /> </li>
 
 		</c:forEach>
 	</ul>

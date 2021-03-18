@@ -20,6 +20,7 @@ public class JpaTarefaDao implements TarefaDao {
 	}
 
 	public List<Tarefa> lista() {
+		System.out.println(manager.createQuery("select t from Tarefa t").getResultList());
 		 return manager.createQuery("select t from Tarefa t").getResultList();
 	}
 
